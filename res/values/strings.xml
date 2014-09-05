@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Come</string>
+
+
+    <!-- Login activity -->
+    <string name="title"></string>
+    <string name="friend_request_hint"></string>
+    <string name="password_hint"></string>
+    <string name="login_button_hint"></string>
+    <string name="email_hint"></string>
+
+    <!-- Send follow request dialog-->
+    <string name="cancle_button"/>
+    <string name="friend_request_dialog_title"/>
+
+    <!-- Main activity -->
+    <string name="send_request_button">Send Request</string>
+    <string name="check_requests_button">Check Requests</string>
+    <string name="logout_button">Log out</string>
+</resources>
+

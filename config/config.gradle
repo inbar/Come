@@ -1,0 +1,7 @@
+ext {
+    parseApplicationId_dev = "<PARSE_APP_ID>"
+    parseClientKey_dev = "<PARSE CLIENT_KEY>"
+
+    parseApplicationId_production = "<PARSE_APP_ID>"
+    parseClientKey_production = "<PARSE_CLIENT_KEY>"
+}

@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "come"
+        }, 
+        "come": {
+            "applicationId": "8X6rs9B1bXUYD6VcBcQ8Lu0HXBF9ljQ3ghkiYznd", 
+            "masterKey": "dqDxCLE9maJ6U6rn2QCxLWaRauOhH2eotmMTDRAI"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.19"
+    }
+}
