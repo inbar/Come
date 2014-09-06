@@ -1,5 +1,7 @@
-// Private keys
 // Do not commit to vesion control systems
+//
+// $ git update-index --assume-unchanged config/*
+
 ext {
 
 }
