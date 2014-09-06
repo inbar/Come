@@ -1,3 +1,5 @@
+// Private keys
+// Do not commit to vesion control systems
 ext {
     parseApplicationId_dev = "<PARSE_APP_ID>"
     parseClientKey_dev = "<PARSE CLIENT_KEY>"

@@ -9,6 +9,7 @@ buildscript {
 }
 
 apply plugin: 'android'
+apply from: 'config/config.gradle'
 
 repositories {
     mavenCentral()
@@ -28,8 +29,13 @@ dependencies {
 }
 
 android {
+
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+
+    lintOptions {
+        abortOnError false
+    }
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
@@ -43,4 +49,35 @@ android {
             res.srcDirs = ['res']
         }
     }
+
+    buildTypes {
+
+        debug {
+
+        }
+
+        release {
+
+        }
+
+    }
+
+    productFlavors {
+
+        //TODO move placeholder init to build types when possible
+        // TICKET https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CCEQFjAA&url=http%3A%2F%2Fcode.google.com%2Fp%2Fandroid%2Fissues%2Fdetail%3Fid%3D72829&ei=YPAKVPTCN6rMyAOa6oIY&usg=AFQjCNHXg6eHnoHm47fyXwDrImvBd-qIFw&sig2=3cE7OP8db8KhHM5o3gNraw
+        dev {
+            manifestPlaceholders = [parseAppId    : rootProject.ext.parseApplicationId_dev,
+                                    parseClientKey: rootProject.ext.parseClientKey_dev]
+        }
+
+        production {
+            manifestPlaceholders = [parseAppId    : rootProject.ext.parseApplicationId_production,
+                                    parseClientKey: rootProject.ext.parseClientKey_production]
+        }
+
+
+    }
+
+
 }

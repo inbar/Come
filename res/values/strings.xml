@@ -2,21 +2,23 @@
 <resources>
     <string name="app_name">Come</string>
 
-
-    <!-- Login activity -->
-    <string name="title"></string>
-    <string name="friend_request_hint"></string>
-    <string name="password_hint"></string>
-    <string name="login_button_hint"></string>
-    <string name="email_hint"></string>
-
-    <!-- Send follow request dialog-->
-    <string name="cancle_button"/>
-    <string name="friend_request_dialog_title"/>
-
     <!-- Main activity -->
     <string name="send_request_button">Send Request</string>
     <string name="check_requests_button">Check Requests</string>
     <string name="logout_button">Log out</string>
+
+    <!-- Send follow request dialog-->
+    <string name="cancle_button">Cancel</string>
+    <string name="friend_request_hint">Friends email</string>
+    <string name="friend_request_dialog_title">Send a follow request</string>
+    <string name="send_friend_request_button_hint">Send</string>
+
+    <!-- Login activity -->
+    <string name="title">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_hint">Login</string>
+    <string name="email_hint">Your email</string>
+
 </resources>
+
 
