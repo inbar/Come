@@ -1,6 +1,6 @@
 // Do not commit to vesion control systems
 //
-// $ git update-index --assume-unchanged config/
+// $ git update-index --assume-unchanged config/*
 
 ext {
     parseApplicationId_dev = "<PARSE_APP_ID>"
