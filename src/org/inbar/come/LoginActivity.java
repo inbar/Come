@@ -47,12 +47,12 @@ public class LoginActivity extends Activity {
         final String password = passwordView.getText().toString();
 
         if (email == null || email == "") {
-            Logging.justLog(TAG, "password is empty", this);
+            Logging.justLog(TAG, "password is empty");
 
         }
 
         if (password == null || password == "") {
-            Logging.justLog(TAG, "password is empty", this);
+            Logging.justLog(TAG, "password is empty");
         }
 
         ParseUser.logInInBackground(email, password, new LogInCallback() {

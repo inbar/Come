@@ -14,18 +14,18 @@ import org.inbar.come.R;
 /**
  * Created by inbar on 26/08/14.
  */
-public class FriendRequestDialog extends DialogFragment {
+public class FollowRequestDialog extends DialogFragment {
 
     public interface FriendRequestDialogListener {
-        public void onFriendRequestDialogPositiveClick(String email);
-        public void onFriendRequestDialogNegativeClick();
+        public void onFollowRequestDialogPositiveClick(String email);
+        public void onFollowRequestDialogNegativeClick();
     }
 
-    public static final String TAG = "DialogFragment";
+    public static final String TAG = "FollowRequestDialog";
 
-    public static FriendRequestDialog newInstance() {
+    public static FollowRequestDialog newInstance() {
 
-        FriendRequestDialog friendRequestDialog = new FriendRequestDialog();
+        FollowRequestDialog friendRequestDialog = new FollowRequestDialog();
         return friendRequestDialog;
     }
 
@@ -47,7 +47,7 @@ public class FriendRequestDialog extends DialogFragment {
                              final FriendRequestDialogListener dialogListener = (FriendRequestDialogListener) getActivity();
                              final EditText emailField = (EditText) dialog.findViewById(R.id.friendRequestField);
                              final String email = emailField.getText().toString();
-                             dialogListener.onFriendRequestDialogPositiveClick(email);
+                             dialogListener.onFollowRequestDialogPositiveClick(email);
                          }
                      })
                      .setNegativeButton(R.string.cancle_button, new DialogInterface.OnClickListener() {

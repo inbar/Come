@@ -22,12 +22,7 @@ public class Logging {
         logError(tag, msg, t);
     }
 
-    public static void justLog(String tag, String msg, Context context) {
-
-        if (DEBUG) {
-            displayOnScreen(msg, context);
-        }
-
+    public static void justLog(String tag, String msg) {
         log(tag, msg);
     }
 

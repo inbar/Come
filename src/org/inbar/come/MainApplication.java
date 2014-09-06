@@ -5,8 +5,8 @@ import com.parse.ParseACL;
 import com.parse.ParseObject;
 
 import android.app.Application;
+import android.util.Log;
 
-import org.inbar.come.model.FollowRequest;
 import org.inbar.come.model.UserFollowInfo;
 
 public class MainApplication extends Application {
@@ -18,6 +18,8 @@ public class MainApplication extends Application {
     @Override
 	public void onCreate() {
 		super.onCreate();
+
+        Log.i(TAG, "main");
 
         // Add your initialization code here
 //        ParseObject.registerSubclass(FollowRequest.class);

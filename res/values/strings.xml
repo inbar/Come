@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Come</string>
+    <string name="label_login_activity">Login</string>
+
 
     <!-- Main activity -->
     <string name="send_request_button">Send Request</string>
