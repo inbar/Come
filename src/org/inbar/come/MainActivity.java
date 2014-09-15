@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.parse.FunctionCallback;
@@ -23,15 +21,14 @@ import org.inbar.come.util.Alerts;
 import org.inbar.come.util.CloudFunctions;
 import org.inbar.come.util.Logging;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends Activity implements FollowRequestDialog.FriendRequestDialogListener {
 
     public static final String TAG = "MainActivity";
-    private ArrayAdapter<String> listAdapter;
-    private ArrayList<String> friendRequestList = new ArrayList();
+//    private ArrayAdapter<String> listAdapter;
+//    private ArrayList<String> friendRequestList = new ArrayList();
     private ParseUser currentUser;
 
     /**
@@ -44,9 +41,9 @@ public class MainActivity extends Activity implements FollowRequestDialog.Friend
 
         ParseAnalytics.trackAppOpened(getIntent());
 
-        final ListView friendRequestListView = (ListView) findViewById(R.id.friend_request_list);
-        listAdapter = new ArrayAdapter<String>(this, R.layout.row, friendRequestList);
-        friendRequestListView.setAdapter(listAdapter);
+//        final ListView friendRequestListView = (ListView) findViewById(R.id.friend_request_list);
+//        listAdapter = new ArrayAdapter<String>(this, R.layout.row, friendRequestList);
+//        friendRequestListView.setAdapter(listAdapter);
 
     }
 
@@ -63,12 +60,12 @@ public class MainActivity extends Activity implements FollowRequestDialog.Friend
         } else {
             final TextView usernameLabel = (TextView) findViewById(R.id.username_label);
             usernameLabel.setText(currentUser.getUsername());
-            getUserFolloInfo();
+            getUserFollowInfo();
         }
 
     }
 
-    private UserFollowInfo getUserFolloInfo() {
+    private UserFollowInfo getUserFollowInfo() {
 
         final ParseQuery<UserFollowInfo> query = ParseQuery.getQuery(UserFollowInfo.class);
         query.whereEqualTo("username", currentUser.getUsername());
@@ -98,6 +95,11 @@ public class MainActivity extends Activity implements FollowRequestDialog.Friend
         startActivity(intent);
     }
 
+    public void doOpenListsView(View view) {
+        Intent intent = new Intent(this, ListsActivity.class);
+        startActivity(intent);
+    }
+
     /*
     * Controller methods (View API)
     * */
@@ -116,7 +118,7 @@ public class MainActivity extends Activity implements FollowRequestDialog.Friend
 
     private void refreshFollowRequests() {
 
-        getUserFolloInfo();
+        getUserFollowInfo();
     }
 
 
@@ -170,6 +172,5 @@ public class MainActivity extends Activity implements FollowRequestDialog.Friend
         });
 
     }
-
 
 }

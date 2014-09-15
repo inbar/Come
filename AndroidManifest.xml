@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.inbar.come"
-          android:versionCode="1"
-          android:versionName="1.0">
+    package="org.inbar.come"
+    android:versionCode="1"
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="19"/>
+        android:targetSdkVersion="19" />
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="MainApplication"
+        android:name=".MainApplication"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name">
+        android:label="@string/app_name" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".LoginActivity"
-            android:label="@string/label_login_activity">
-
+            android:label="@string/label_login_activity" >
         </activity>
 
         <meta-data
             android:name="PARSE_APP_ID"
-            android:value="${parseAppId}"/>
+            android:value="${parseAppId}" />
         <meta-data
             android:name="PARSE_CLIENT_KEY"
-            android:value="${parseClientKey}"/>
+            android:value="${parseClientKey}" />
 
+        <activity
+            android:name=".ListsActivity"
+            android:label="@string/title_activity_lists" >
+        </activity>
     </application>
 
 </manifest>

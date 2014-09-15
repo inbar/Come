@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Come</string>
     <string name="label_login_activity">Login</string>
-
 
     <!-- Main activity -->
     <string name="send_request_button">Send Request</string>
     <string name="check_requests_button">Check Requests</string>
     <string name="logout_button">Log out</string>
+    <string name="open_lists_view_button">Lists view</string>
 
-    <!-- Send follow request dialog-->
+    <!-- Send follow request dialog -->
     <string name="cancle_button">Cancel</string>
     <string name="friend_request_hint">Friends email</string>
     <string name="friend_request_dialog_title">Send a follow request</string>
@@ -21,6 +22,12 @@
     <string name="login_button_hint">Login</string>
     <string name="email_hint">Your email</string>
 
+    <!-- Lists Activity -->
+    <string name="title_activity_lists">ListsActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
 </resources>
-
-
